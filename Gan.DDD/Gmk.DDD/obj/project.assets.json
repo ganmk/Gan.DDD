@@ -186,9 +186,9 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\code\\Gan.DDD\\Gan.DDD\\Gan.DDD\\Gmk.DDD\\Gmk.DDD.csproj",
-      "projectName": "Gmk.DDD",
-      "projectPath": "C:\\code\\Gan.DDD\\Gan.DDD\\Gan.DDD\\Gmk.DDD\\Gmk.DDD.csproj",
+      "projectUniqueName": "C:\\code\\Gan.DDD\\Gan.DDD\\Gan.DDD\\Gmk.DDD\\Gan.DDD.csproj",
+      "projectName": "Gan.DDD",
+      "projectPath": "C:\\code\\Gan.DDD\\Gan.DDD\\Gan.DDD\\Gmk.DDD\\Gan.DDD.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "C:\\code\\Gan.DDD\\Gan.DDD\\Gan.DDD\\Gmk.DDD\\obj\\",
       "projectStyle": "PackageReference",

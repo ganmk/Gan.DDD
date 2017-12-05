@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gmk.DDD
+namespace Gan.DDD
 {
     public abstract class EntityBase : IEntity
     {

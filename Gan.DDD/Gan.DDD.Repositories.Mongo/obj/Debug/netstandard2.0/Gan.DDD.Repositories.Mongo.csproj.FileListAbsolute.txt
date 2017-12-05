@@ -1,0 +1,5 @@
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Mongo\bin\Debug\netstandard2.0\Gan.DDD.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Mongo\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Mongo.csprojResolveAssemblyReference.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Mongo\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Mongo.csproj.CoreCompileInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Mongo\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Mongo.AssemblyInfoInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Mongo\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Mongo.AssemblyInfo.cs

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Gmk.DDD;
+using Gan.DDD;
 
 namespace Gan.DDD.Repositories.Redis
 {

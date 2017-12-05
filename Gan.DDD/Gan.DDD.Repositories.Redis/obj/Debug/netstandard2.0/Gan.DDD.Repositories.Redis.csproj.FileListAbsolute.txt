@@ -1,0 +1,11 @@
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\bin\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.deps.json
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\bin\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\bin\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.pdb
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\bin\Debug\netstandard2.0\Gan.DDD.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\bin\Debug\netstandard2.0\Gan.DDD.pdb
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.csprojResolveAssemblyReference.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.csproj.CoreCompileInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.AssemblyInfoInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.AssemblyInfo.cs
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.Redis\obj\Debug\netstandard2.0\Gan.DDD.Repositories.Redis.pdb

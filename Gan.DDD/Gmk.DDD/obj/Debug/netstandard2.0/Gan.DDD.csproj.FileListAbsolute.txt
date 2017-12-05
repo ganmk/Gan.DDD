@@ -1,0 +1,9 @@
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\bin\Debug\netstandard2.0\Gan.DDD.deps.json
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\bin\Debug\netstandard2.0\Gan.DDD.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\bin\Debug\netstandard2.0\Gan.DDD.pdb
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\obj\Debug\netstandard2.0\Gan.DDD.csprojResolveAssemblyReference.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\obj\Debug\netstandard2.0\Gan.DDD.csproj.CoreCompileInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\obj\Debug\netstandard2.0\Gan.DDD.AssemblyInfoInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\obj\Debug\netstandard2.0\Gan.DDD.AssemblyInfo.cs
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\obj\Debug\netstandard2.0\Gan.DDD.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gmk.DDD\obj\Debug\netstandard2.0\Gan.DDD.pdb

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Gan.DDD
 {
-    public abstract class NoSqlEntity : EntityBase
+    public class IMongoRepository<TEntity>
     {
+
     }
 }
