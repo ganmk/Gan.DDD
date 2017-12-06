@@ -1185,6 +1185,9 @@
       "Gan.DDD/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "MongoDB.Bson": "2.4.4"
+        },
         "compile": {
           "bin/placeholder/Gan.DDD.dll": {}
         },
