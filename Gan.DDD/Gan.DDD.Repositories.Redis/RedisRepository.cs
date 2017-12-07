@@ -39,17 +39,27 @@ namespace Gan.DDD.Repositories.Redis
 
         public IQueryable<TEntity> GetModel()
         {
-            throw new NotImplementedException();
+            List<TEntity> list = new List<TEntity>();
+            var hashVals = _db.HashValues(tableName).ToArray();
+            foreach (var item in hashVals)
+            {
+                list.Add(SerializeMemoryHelper.DeserializeFromBinary(item) as TEntity);
+
+            }
+            return list.AsQueryable();
         }
 
         public void Insert(TEntity item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                _db.HashSet(tableName, item.Id, SerializeMemoryHelper.SerializeToBinary(item));
+            }
         }
 
         public void Insert(IEntity item)
         {
-            throw new NotImplementedException();
+            this.Insert(item as TEntity);
         }
 
         public void Insert(IEnumerable<IEntity> list)
