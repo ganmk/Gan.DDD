@@ -1,7 +1,9 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Reflection;
 using System.Text;
 
 namespace Gan.DDD.Repositories.Mongo
@@ -68,5 +70,50 @@ namespace Gan.DDD.Repositories.Mongo
             }
             return string.Format("mongodb://{0}{1}/{2}", authentication, _connectionStringHost, database);
         }
+
+        private BsonDocumentFilterDefinition<TEntity> GeneratorMongoQuery<U>(U template)
+        {
+            var qType = typeof(U);
+            var outter = new BsonDocument();
+            var simpleQuery = new BsonDocument();
+            foreach (var item in qType.GetProperties(BindingFlags.Instance | BindingFlags.Public))
+            {
+                if (item.PropertyType.IsClass && item.PropertyType != typeof(string))
+                {
+                    foreach (var sub in item.PropertyType.GetProperties(BindingFlags.Instance | BindingFlags.Public))
+                    {
+                        if (sub.PropertyType.IsClass && sub.PropertyType != typeof(string))
+                        {
+                            foreach (var subInner in sub.PropertyType.GetProperties(BindingFlags.Instance | BindingFlags.Public))
+                            {
+                                if (subInner.PropertyType.IsClass && subInner.PropertyType != typeof(string))
+                                {
+                                    foreach (var subItemInner in subInner.PropertyType.GetProperties(BindingFlags.Instance | BindingFlags.Public))
+                                    {
+                                        simpleQuery.Add(new BsonElement(item.Name + "." + sub.Name + "." + subInner.Name + "." + subItemInner.Name, BsonValue.Create(subItemInner.GetValue(subInner.GetValue(sub.GetValue(item.GetValue(template)))))));
+                                    }
+                                }
+                                else
+                                {
+                                    simpleQuery.Add(new BsonElement(item.Name + "." + sub.Name + "." + subInner.Name + ".", BsonValue.Create(subInner.GetValue(sub.GetValue(item.GetValue(template))))));
+                                }
+
+                            }
+                        }
+                        else
+                        {
+                            simpleQuery.Add(new BsonElement(item.Name + "." + sub.Name, BsonValue.Create(sub.GetValue(item.GetValue(template)))));
+                        }
+
+                    }
+                }
+                else
+                {
+                    simpleQuery.Add(new BsonElement(item.Name, BsonValue.Create(item.GetValue(template))));
+                }
+            }
+            return new BsonDocumentFilterDefinition<TEntity>(simpleQuery);
+        }
+        
     }
 }

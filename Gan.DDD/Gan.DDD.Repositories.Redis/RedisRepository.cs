@@ -64,7 +64,10 @@ namespace Gan.DDD.Repositories.Redis
 
         public void Insert(IEnumerable<IEntity> list)
         {
-            throw new NotImplementedException();
+            foreach (var item in list)
+            {
+                this.Insert(item as TEntity);
+            }
         }
 
         public void SetDateContext(object db)
@@ -74,17 +77,29 @@ namespace Gan.DDD.Repositories.Redis
 
         public void Update(TEntity item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                var old = Find(item.Id);
+                if (old != null)
+                {
+                    _db.HashDelete(tableName, item.Id);
+                    _db.HashSet(tableName, item.Id, SerializeMemoryHelper.SerializeToBinary(item));
+
+                }
+            }
         }
 
         public void Update(IEntity item)
         {
-            throw new NotImplementedException();
+            this.Update(item as TEntity);
         }
 
         public void Update(IEnumerable<IEntity> list)
         {
-            throw new NotImplementedException();
+            foreach (var item in list)
+            {
+                this.Delete(item as TEntity);
+            }
         }
     }
 }
