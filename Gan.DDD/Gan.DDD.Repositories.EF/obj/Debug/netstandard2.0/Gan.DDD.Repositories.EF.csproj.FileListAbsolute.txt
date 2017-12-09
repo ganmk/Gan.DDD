@@ -1,0 +1,8 @@
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\bin\Debug\netstandard2.0\Gan.DDD.Repositories.EF.deps.json
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\bin\Debug\netstandard2.0\Gan.DDD.Repositories.EF.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\bin\Debug\netstandard2.0\Gan.DDD.dll
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\bin\Debug\netstandard2.0\Gan.DDD.pdb
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\obj\Debug\netstandard2.0\Gan.DDD.Repositories.EF.csprojResolveAssemblyReference.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\obj\Debug\netstandard2.0\Gan.DDD.Repositories.EF.csproj.CoreCompileInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\obj\Debug\netstandard2.0\Gan.DDD.Repositories.EF.AssemblyInfoInputs.cache
+C:\code\Gan.DDD\Gan.DDD\Gan.DDD\Gan.DDD.Repositories.EF\obj\Debug\netstandard2.0\Gan.DDD.Repositories.EF.AssemblyInfo.cs
