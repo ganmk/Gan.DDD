@@ -10,7 +10,7 @@ namespace Gan.DDD
 
         System.Linq.IQueryable<TEntity> GetModel();
 
-        void SetDateContext(object db);
+        void SetDataContext(object db);
 
         void Insert(TEntity item);
 

@@ -82,27 +82,52 @@ namespace Gan.DDD.Repositories.EF
 
         public IQueryable<TEntity> GetModel(Action<IOrderable<TEntity>> orderBy)
         {
-            //var linq=new Orderable
+            var linq = new Orderable<TEntity>(GetModel());
+            orderBy(linq);
+            return linq.Queryable;
         }
 
         public void Insert(TEntity item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                Db.Entry<TEntity>(item as TEntity);
+                Db.Set<TEntity>().Add(item as TEntity);
+                this.SaveChanges();
+            }
         }
 
         public void Insert(IEntity item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                Db.Entry<TEntity>(item as TEntity);
+                Db.Set<TEntity>().Add(item as TEntity);
+                this.SaveChanges();
+            }
         }
 
         public void Insert(IEnumerable<IEntity> list)
         {
-            throw new NotImplementedException();
+            foreach (var item in list)
+            {
+                Db.Entry<TEntity>(item as TEntity);
+                Db.Set<TEntity>().Add(item as TEntity);
+            }
+            this.SaveChanges();
         }
 
-        public void SetDateContext(object db)
+        public void SetDataContext(object db)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Db = (DbContext)db;
+            }
+            catch (Exception)
+            {
+
+                throw new ArgumentException("EF.SetDataContext要求上下文为DbContext类型");
+            }
         }
 
         public void Update(TEntity item)

@@ -70,7 +70,7 @@ namespace Gan.DDD.Repositories.Redis
             }
         }
 
-        public void SetDateContext(object db)
+        public void SetDataContext(object db)
         {
             throw new NotImplementedException();
         }
