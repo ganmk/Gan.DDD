@@ -132,17 +132,32 @@ namespace Gan.DDD.Repositories.EF
 
         public void Update(TEntity item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                Db.Set<TEntity>().Attach(item);
+                Db.Entry(item).State = EntityState.Modified;
+                this.SaveChanges();
+            }
         }
 
         public void Update(IEntity item)
         {
-            throw new NotImplementedException();
+            if (item != null)
+            {
+                Db.Set<TEntity>().Attach(item as TEntity);
+                Db.Entry(item).State = EntityState.Modified;
+                this.SaveChanges();
+            }
         }
 
         public void Update(IEnumerable<IEntity> list)
         {
-            throw new NotImplementedException();
+            foreach (var item in list)
+            {
+                Db.Set<TEntity>().Attach(item as TEntity);
+                Db.Entry(item).State = EntityState.Modified;
+            }
+            this.SaveChanges();
         }
     }
 }
